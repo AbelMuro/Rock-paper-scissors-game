@@ -1,0 +1,10 @@
+.game{
+    background-image: url('./icons/bg-pentagon.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 345px;
+    height: 345px;
+    margin: auto;
+    position: relative;
+}
+

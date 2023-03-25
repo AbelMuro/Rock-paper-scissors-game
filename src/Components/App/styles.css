@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'barlow 700';
+    src: url('./FontFiles/BarlowSemiCondensed-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'barlow 600';
+    src: url('./FontFiles/BarlowSemiCondensed-SemiBold.ttf');
+}
+
+:root{
+    --font-700: 'barlow 700';
+    --font-600: 'barlow 600';
+}
+
+
+body{
+    height: 100vh;
+    background: radial-gradient(134.34% 134.34% at 50% 0%, #1F3757 0%, #131537 100%);
+}
+
+* {
+    transition: all 0.2s linear;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
