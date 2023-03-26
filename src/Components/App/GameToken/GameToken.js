@@ -1,15 +1,20 @@
-import React, {useEffect, useRef, useCallback} from 'react';
+import React, {useCallback} from 'react';
 import icons from './icons';
 import styles from './styles.module.css';
+import {useNavigate} from 'react-router-dom';
 
 function GameToken({tokenChoosen}) {
+    const navigate = useNavigate();
 
+    const handleTokenClick = () => {
+        navigate('/results', {state: tokenChoosen});
+    }
 
     const tokenRef = useCallback((ref) => {
         if(!ref) return;
 
         const tokenShadow = ref;
-        const token = ref.childNodes[0];
+        const token = ref.nextElementSibling;
         const tokenSymbol = token.childNodes[0];
 
         if(tokenChoosen == 'scissors'){
@@ -41,12 +46,14 @@ function GameToken({tokenChoosen}) {
     }, [])
 
 
-    return(            
-        <div ref={tokenRef}>
-            <div>
-                <img src={icons[tokenChoosen]} alt={tokenChoosen}/> 
-            </div>
+    return(     
+    <>
+        <div ref={tokenRef}></div>            
+        <div onClick={handleTokenClick}>
+            <img src={icons[tokenChoosen]} alt={tokenChoosen}/> 
         </div>
+    </>       
+
     )
 } 
 

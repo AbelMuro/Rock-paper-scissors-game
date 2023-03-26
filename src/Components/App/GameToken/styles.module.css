@@ -3,52 +3,39 @@
 .game_redShadow, 
 .game_purpleShadow, 
 .game_lightBlueShadow{
-    width: 145px;
-    height: 141.44px;
-    border-top: 10px solid #BABFD4;
+    width: 100%;
+    height: 100%;
+    border-top: 25px solid #BABFD4;
     background-color: #BABFD4;
     border-radius: 100%;
     position: absolute;
-    cursor: pointer;
 }
 
 .game_yellowShadow{
-    top: -50px;
-    left: 0;
-    right: 0;
-    margin: auto;
     border-bottom: 10px solid #C76C1B;
     border-left: 10px solid #C76C1B;
     border-right: 10px solid #C76C1B;
 }
 
 .game_darkBlueShadow{
-    top: 70px;
-    right: -60px;
     border-bottom: 10px solid #2A45C2;
     border-left: 10px solid #2A45C2;
     border-right: 10px solid #2A45C2;
 }
 
 .game_redShadow{
-    bottom: -50px;
-    right: 0px;
     border-bottom: 10px solid #9D1634;
     border-left: 10px solid #9D1634;
     border-right: 10px solid #9D1634; 
 }
 
 .game_purpleShadow{
-    bottom: -50px;
-    left: 0px;
     border-bottom: 10px solid #5F37A8;
     border-left: 10px solid #5F37A8;
     border-right: 10px solid #5F37A8; 
 }
 
 .game_lightBlueShadow{
-    top: 70px;
-    left: -60px;
     border-bottom: 10px solid #2D8DAB;
     border-left: 10px solid #2D8DAB;
     border-right: 10px solid #2D8DAB; 
@@ -59,11 +46,10 @@
 .game_redToken, 
 .game_purpleToken, 
 .game_lightBlueToken{
+    width: 100%;
+    height: 100%;
     position: absolute;
-    bottom: -4px;
-    left: -10px;
-    width: 145px;
-    height: 141.44px;
+    top: -5px;
     padding-top: 5px;
     border-radius: 100%;
     background: content-box linear-gradient(0deg, #F3F3F3 0%, #DADADA 98.34%);
@@ -98,7 +84,24 @@
 .game_rock, 
 .game_lizard, 
 .game_spock{
-    width: 58.48px;
+    width: 45%;
     object-fit: contain;
 }
 
+@media(max-width: 600px){
+    .game_scissors, 
+    .game_paper, 
+    .game_rock, 
+    .game_lizard, 
+    .game_spock {
+       width: 37px; 
+    }
+
+    .game_yellowToken, 
+    .game_darkBlueToken, 
+    .game_redToken, 
+    .game_purpleToken, 
+    .game_lightBlueToken{
+        border-width: 12px;
+    }  
+}

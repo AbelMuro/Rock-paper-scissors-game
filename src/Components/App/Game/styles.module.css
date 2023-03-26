@@ -8,3 +8,81 @@
     position: relative;
 }
 
+.game_tokenScissors, 
+.game_tokenPaper, 
+.game_tokenRock, 
+.game_tokenLizard, 
+.game_tokenSpock {
+    width: 145px;
+    height: 148px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.game_tokenScissors{
+    top: -50px; 
+    left: 0; 
+    right: 0; 
+    margin: auto;
+}
+
+.game_tokenPaper{
+    top: 70px; 
+    right: -60px;
+}
+
+.game_tokenRock{
+    bottom: -50px; 
+    right: 0px;
+}
+
+.game_tokenLizard{
+    bottom: -50px; 
+    left: 0px;
+}
+
+.game_tokenSpock{
+    top: 70px; 
+    left: -60px; 
+}
+
+@media(max-width: 600px){
+    .game{
+        width: 227px;
+        height: 227px;
+    }
+
+    .game_tokenScissors, 
+    .game_tokenPaper, 
+    .game_tokenRock, 
+    .game_tokenLizard, 
+    .game_tokenSpock {
+        width: 96px;
+        height: 97px;
+    }
+
+    .game_tokenScissors{
+        top: -40px; 
+    }
+    
+    .game_tokenPaper{
+        top: 50px; 
+        right: -50px;
+    }
+    
+    .game_tokenRock{
+        bottom: -50px; 
+        right: 0px;
+    }
+    
+    .game_tokenLizard{
+        bottom: -50px; 
+        left: 0px;
+    }
+    
+    .game_tokenSpock{
+        top: 50px; 
+        left: -50px;
+    }
+
+}

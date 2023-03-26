@@ -4,13 +4,23 @@ import styles from './styles.module.css';
 
 function Game() {
     return(
-        <div className={styles.game}>
-            <GameToken tokenChoosen='scissors'/>
-            <GameToken tokenChoosen='paper'/>
-            <GameToken tokenChoosen='rock'/>
-            <GameToken tokenChoosen='lizard'/>
-            <GameToken tokenChoosen='spock'/>
-        </div>
+        <main className={styles.game}>
+            <div className={styles.game_tokenScissors}>
+                <GameToken tokenChoosen='scissors' />                
+            </div>
+            <div className={styles.game_tokenPaper}>
+                <GameToken tokenChoosen='paper' />                
+            </div>
+            <div className={styles.game_tokenRock}>
+                <GameToken tokenChoosen='rock' />                
+            </div>
+            <div className={styles.game_tokenLizard}>
+                <GameToken tokenChoosen='lizard' />                
+            </div>
+            <div className={styles.game_tokenSpock}>
+                <GameToken tokenChoosen='spock' />
+            </div>
+        </main>
     )
 }
 
