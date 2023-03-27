@@ -56,6 +56,8 @@
     line-height: 67.2px;
     color: white;
     justify-self: flex-end;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .results_playAgain{
@@ -74,4 +76,18 @@
 .results_playAgain:hover{
     background: linear-gradient(0deg, #2e2d2d 0%, #383838 100%);
     color: white;
+}
+
+
+.results_victoryRing{
+    box-sizing: content-box;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.05);
+    background-clip: padding-box;
+    padding: 80px;
+    border: 80px solid rgba(255, 255, 255, 0.03);
+    outline: 80px solid rgba(255, 255, 255, 0.01);
+    position: relative;
+    top: -100px;
+    left: -10px;
 }

@@ -3,6 +3,10 @@ import CheckRules from './CheckRules';
 import GameToken from './../GameToken';
 import styles from './styles.module.css';
 import {useLocation} from 'react-router-dom';
+
+
+//i will need to add the victoryRing class to the token that won the game
+
 function Results() {
     const {state} = useLocation();
     const userChoice = state;
@@ -51,14 +55,17 @@ function Results() {
 
     return(
         <main className={styles.results}>
-            <div className={styles.results_token}>
-                <h2 className={styles.results_title}>
-                    YOU PICKED
-                </h2>
-                <div className={styles.results_tokenContainer}>
-                    <GameToken tokenChoosen={userChoice}/>
-                </div> 
+            <div id='userToken'> 
+                <div className={styles.results_token}>
+                    <h2 className={styles.results_title}>
+                        YOU PICKED
+                    </h2>
+                    <div className={styles.results_tokenContainer}>
+                        <GameToken tokenChoosen={userChoice} borderWidth='35px' top='-13px' padding='13px'/>
+                    </div> 
+                </div>                
             </div>
+
             {
                 displayResults ? 
                 <div className={styles.results_message}>
@@ -74,12 +81,15 @@ function Results() {
                 <h2 className={styles.results_title}>
                     THE HOUSE PICKED
                 </h2>
-                <div className={styles.results_tokenContainer}>
-                    {displayHouseChoice ? 
-                        <GameToken tokenChoosen={houseChoice}/> : 
-                        <div className={styles.blackCircle}></div> 
-                    }
+                <div id='houseToken'>
+                    <div className={styles.results_tokenContainer}>
+                        {displayHouseChoice ? 
+                            <GameToken tokenChoosen={houseChoice} borderWidth='35px' top='-13px' padding='13px'/> :
+                            <div className={styles.blackCircle}></div> 
+                        }
+                    </div>                            
                 </div>
+           
             </div>
 
         </main>

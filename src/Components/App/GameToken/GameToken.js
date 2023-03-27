@@ -1,9 +1,11 @@
 import React, {useCallback} from 'react';
 import icons from './icons';
 import styles from './styles.module.css';
+import {useMediaQuery} from '@mui/material';
 import {useNavigate} from 'react-router-dom';
 
-function GameToken({tokenChoosen}) {
+function GameToken({tokenChoosen, borderWidth, top, padding}) {
+    const mobile = useMediaQuery('(max-width: 600px)');
     const navigate = useNavigate();
 
     const handleTokenClick = () => {
@@ -49,7 +51,7 @@ function GameToken({tokenChoosen}) {
     return(     
     <>
         <div ref={tokenRef}></div>            
-        <div onClick={handleTokenClick}>
+        <div onClick={handleTokenClick} style={mobile ? {} : {borderWidth: borderWidth, top: top, paddingTop: padding}}>
             <img src={icons[tokenChoosen]} alt={tokenChoosen}/> 
         </div>
     </>       

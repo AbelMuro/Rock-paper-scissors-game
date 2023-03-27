@@ -40,4 +40,6 @@ export default function CheckRules(userChoice, houseChoice) {
         return 'You Win';
     else if(userChoice == 'spock' && houseChoice == 'lizard')
         return 'You Lose';
+    else
+        return "Draw"
 } 

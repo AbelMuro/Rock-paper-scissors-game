@@ -12,33 +12,33 @@
 }
 
 .game_yellowShadow{
-    border-bottom: 10px solid #C76C1B;
-    border-left: 10px solid #C76C1B;
-    border-right: 10px solid #C76C1B;
+    border-bottom: 15px solid #C76C1B;
+    border-left: 15px solid #C76C1B;
+    border-right: 15px solid #C76C1B;
 }
 
 .game_darkBlueShadow{
-    border-bottom: 10px solid #2A45C2;
-    border-left: 10px solid #2A45C2;
-    border-right: 10px solid #2A45C2;
+    border-bottom: 15px solid #2A45C2;
+    border-left: 15px solid #2A45C2;
+    border-right: 15px solid #2A45C2;
 }
 
 .game_redShadow{
-    border-bottom: 10px solid #9D1634;
-    border-left: 10px solid #9D1634;
-    border-right: 10px solid #9D1634; 
+    border-bottom: 15px solid #9D1634;
+    border-left: 15px solid #9D1634;
+    border-right: 15px solid #9D1634; 
 }
 
 .game_purpleShadow{
-    border-bottom: 10px solid #5F37A8;
-    border-left: 10px solid #5F37A8;
-    border-right: 10px solid #5F37A8; 
+    border-bottom: 15px solid #5F37A8;
+    border-left: 15px solid #5F37A8;
+    border-right: 15px solid #5F37A8; 
 }
 
 .game_lightBlueShadow{
-    border-bottom: 10px solid #2D8DAB;
-    border-left: 10px solid #2D8DAB;
-    border-right: 10px solid #2D8DAB; 
+    border-bottom: 15px solid #2D8DAB;
+    border-left: 15px solid #2D8DAB;
+    border-right: 15px solid #2D8DAB; 
 }
 
 .game_yellowToken, 
@@ -60,23 +60,23 @@
 }
 
 .game_yellowToken{
-    border: 15px solid #EB9F0E;
+    border: 17px solid #EB9F0E;
 }
 
 .game_darkBlueToken{
-    border: 15px solid #4664F4;
+    border: 17px solid #4664F4;
 }
 
 .game_redToken{
-    border: 15px solid #DB2E4D;
+    border: 17px solid #DB2E4D;
 }
 
 .game_purpleToken{
-    border: 15px solid #834EE3;
+    border: 17px solid #834EE3;
 }
 
 .game_lightBlueToken{
-    border: 15px solid #3FB7CD;
+    border: 17px solid #3FB7CD;
 }
 
 .game_scissors, 
