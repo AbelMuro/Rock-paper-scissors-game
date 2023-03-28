@@ -1,0 +1,35 @@
+.mobileDialog{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.mobileDialog_title{
+    width: 100px;
+    margin: auto;
+    font-family: var(--font-700);
+    font-size: 32px;
+    line-height: 32px;
+    color: #3B4262;
+}
+
+.mobileDialog_rulesImage{
+    width: 311px;
+    object-fit: contain; 
+}
+
+.mobileDialog_closeButton{
+    border: none;
+    background-color: transparent;
+}
+
+.mobileDialog_closeIcon{
+    width: 19.09px;
+    object-fit: contain;
+}

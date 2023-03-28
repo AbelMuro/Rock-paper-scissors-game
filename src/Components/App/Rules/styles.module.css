@@ -19,34 +19,3 @@
     background-color: white;
     color: rgb(0, 0, 78);
 }
-
-.rules_title{
-    font-family: var(--font-700);
-    font-size: 32px;
-    line-height: 32px;
-    color: #3B4262;
-}
-
-.rules_close{
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-.rules_closeIcon{
-    width: 19.09px;
-    object-fit: contain;
-}
-
-.rules_rulesImage{
-    width: 336px;
-    object-fit: contain;
-}
-
-@media(max-width: 600px){
-    .rules_button{
-        left: 0;
-        right: 0;
-        margin: auto;
-    }
-}

@@ -138,7 +138,6 @@
         min-width: initial;
     }
     .results_token{
-
         width: 250px;
         height: 300px;
     }   
@@ -151,7 +150,7 @@
     .results_victoryRing{
         padding: 40px;
         border-width: 40px;
-        outline: 40px;
+        outline-width: 40px;
         top: 63px;
     }
     .results_title{
@@ -182,5 +181,13 @@
 @media(max-width: 550px){
     .results_token{
         width: 145px;
+    }
+}
+@media(max-width: 450px){
+    .results_victoryRing{
+        padding: 20px;
+        border-width: 20px;
+        outline-width: 20px;
+        top: 21px;
     }
 }
