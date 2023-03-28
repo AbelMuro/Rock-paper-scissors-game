@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
-import {Dialog, DialogTitle, DialogContent, Stack} from '@mui/material';
+import {Dialog, DialogTitle, DialogContent, Stack, useMediaQuery} from '@mui/material';
 import icons from './icons';
 import styles from './styles.module.css';
 
 function Rules() {
     const [openDialog, setOpenDialog] = useState(false);
+    const mobile = useMediaQuery('(max-width: 460px)')
 
     const handleDialog = () => {
         setOpenDialog(!openDialog);
