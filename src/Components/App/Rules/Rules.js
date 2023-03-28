@@ -6,11 +6,9 @@ import styles from './styles.module.css';
 function Rules() {
     const [openDialog, setOpenDialog] = useState(false);
 
-
     const handleDialog = () => {
         setOpenDialog(!openDialog);
     }
-
 
     return(
         <>

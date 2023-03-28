@@ -4,7 +4,7 @@ import styles from './styles.module.css';
 import {useMediaQuery} from '@mui/material';
 import {useNavigate} from 'react-router-dom';
 
-function GameToken({tokenChoosen, borderWidth, top, padding}) {
+function GameToken({tokenChoosen, borderWidth, top, padding, mobileBorderWidth, mobileTop, mobilePadding}) {
     const mobile = useMediaQuery('(max-width: 600px)');
     const navigate = useNavigate();
 
@@ -51,7 +51,9 @@ function GameToken({tokenChoosen, borderWidth, top, padding}) {
     return(     
     <>
         <div ref={tokenRef}></div>            
-        <div onClick={handleTokenClick} style={mobile ? {} : {borderWidth: borderWidth, top: top, paddingTop: padding}}>
+        <div onClick={handleTokenClick} style={mobile ? 
+            {borderWidth: mobileBorderWidth, top: mobileTop, paddingTop: mobilePadding} : 
+            {borderWidth: borderWidth, top: top, paddingTop: padding}}>
             <img src={icons[tokenChoosen]} alt={tokenChoosen}/> 
         </div>
     </>       
