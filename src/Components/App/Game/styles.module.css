@@ -17,6 +17,14 @@
     height: 148px;
     position: absolute;
     cursor: pointer;
+    border-radius: 100%;
+}
+.game_tokenScissors:hover, 
+.game_tokenPaper:hover, 
+.game_tokenRock:hover, 
+.game_tokenLizard:hover, 
+.game_tokenSpock:hover {
+    outline: 24px solid rgba(255, 255, 255, 0.05);
 }
 
 .game_tokenScissors{
@@ -59,6 +67,14 @@
     .game_tokenSpock {
         width: 96px;
         height: 97px;
+    }
+
+    .game_tokenScissors:hover, 
+    .game_tokenPaper:hover, 
+    .game_tokenRock:hover, 
+    .game_tokenLizard:hover, 
+    .game_tokenSpock:hover{
+        outline-width: 12px;
     }
 
     .game_tokenScissors{

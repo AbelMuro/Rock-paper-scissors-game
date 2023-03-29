@@ -80,6 +80,11 @@ function Results() {
         dispatch({type: 'update score'});
     }, [results])
 
+    useEffect(() => {
+        if(!results) return;
+        window.scrollTo(0, 500);
+    }, [results])
+
     return(
         <main className={styles.container}>
             <section className={styles.results}>

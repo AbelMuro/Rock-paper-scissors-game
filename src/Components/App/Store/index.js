@@ -1,3 +1,4 @@
-import Store from './Store.js';
+import {Store, PersistedStore} from './Store.js';
 
-export default Store;
+export const store = Store;
+export const persistedStore = PersistedStore;

@@ -5,7 +5,7 @@ import {useSelector} from 'react-redux';
 
 
 function ScoreBoard(){
-    const score = useSelector(state => state);
+    const score = useSelector(state => state.score);
 
     return(
         <section className={styles.scoreBoard}>

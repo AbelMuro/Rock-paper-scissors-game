@@ -1,8 +1,17 @@
 import {configureStore} from '@reduxjs/toolkit';
-import ScoreReducer from './Reducers';
+import RootReducer from './Reducers';
+import {                
+    persistStore,                                                                   
+    persistReducer,                                                                                                                                      
+    PERSIST,                                                                        
+} from 'redux-persist';
+import storage from 'redux-persist/lib/storage';                                    //using the local storage to store the state
 
-const Store = configureStore({                      //this will create the store with a reducer
-    reducer: ScoreReducer
+const persistConfig = {key: 'root', storage};
+const persistedReducer = persistReducer(persistConfig, RootReducer);   
+
+export const Store = configureStore({               
+    reducer: persistedReducer,
+    middleware : getDefaultMiddleware => getDefaultMiddleware({serializableCheck: {ignoredActions: [PERSIST]}})
 })
-
-export default Store;
+export const PersistedStore = persistStore(Store);

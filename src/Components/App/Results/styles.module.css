@@ -89,9 +89,9 @@
     border-radius: 100%;
     background-color: rgba(255, 255, 255, 0.05);
     background-clip: padding-box;
-    padding: 80px;
-    border: 80px solid rgba(255, 255, 255, 0.03);
-    outline: 80px solid rgba(255, 255, 255, 0.01);
+    padding: 65px;
+    border: 70px solid rgba(255, 255, 255, 0.03);
+    outline: 83px solid rgba(255, 255, 255, 0.01);
     position: relative;
     top: -100px;
     left: -10px;
@@ -185,9 +185,9 @@
 }
 @media(max-width: 450px){
     .results_victoryRing{
-        padding: 20px;
-        border-width: 20px;
-        outline-width: 20px;
+        padding: 18px;
+        border-width: 24px;
+        outline-width: 33px;
         top: 21px;
     }
 }

@@ -1,18 +1,20 @@
 .mobileDialog{
     display: none;
     position: absolute;
+    z-index: 50;
     top: 0px;
     left: 0;
     right: 0;
     width: 100vw;
-    height: 100vh;
+    height: 108vh;
     border-radius: 10px;
     background-color: white;
 }
 
 .mobileDialog_title{
+    margin-top: 95px;
     width: 100px;
-    margin: auto;
+    margin: 95px auto 113px auto;
     font-family: var(--font-700);
     font-size: 32px;
     line-height: 32px;
@@ -22,11 +24,16 @@
 .mobileDialog_rulesImage{
     width: 311px;
     object-fit: contain; 
+    display: block;
+    margin: 0px auto 154px auto;
 }
 
 .mobileDialog_closeButton{
     border: none;
     background-color: transparent;
+    display: block;
+    margin: auto;
+    cursor: pointer;
 }
 
 .mobileDialog_closeIcon{
